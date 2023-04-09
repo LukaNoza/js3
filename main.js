@@ -11,7 +11,7 @@ function sortArray() {
     var n = numbers.length;
     for (var i = 0; i < n; i++) {
       for (var j = 0; j < n - i - 1; j++) {
-        if (numbers[j] > numbers[j+1]) {
+        if (numbers[j] < numbers[j+1]) {
           var temp = numbers[j];
           numbers[j] = numbers[j+1];
           numbers[j+1] = temp;
